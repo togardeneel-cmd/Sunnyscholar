@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sunny Scholar 6기 모집</title>
+<meta name="description" content="SUNNY Scholar 6기에서 사회문제를 끝까지 파고들 대학생 25명을 찾습니다. 서류 접수 2026.11.16 – 12.06">
+<meta property="og:type" content="website">
+<meta property="og:title" content="2027 Sunny Scholar 6기 모집">
+<meta property="og:description" content="Deep Dive into Social Problems — 질문하고, 파고들고, 현장에서 증명합니다.">
+<meta property="og:image" content="/keyvi.jpg">
+<link rel="preload" href="/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>
+@font-face{font-family:"Pretendard";src:url("PretendardVariable.woff2") format("woff2-variations"),url("PretendardVariable.woff2") format("woff2");font-weight:45 920;font-style:normal;font-display:swap}
+/* Layout: oopy/Notion single column page (sticky nav, cover, 720px reading column, callouts), Sunny violet + lime as accents */
+:root{
+  --bg:#FFFFFF;
+  --fg:#2F2A3A;
+  --muted:#7A7585;
+  --line:#ECE9F2;
+  --soft:#F6F4FA;
+  --violet:#7B3FF2;
+  --violet-ink:#5A22CF;
+  --lime:#D6FF1E;
+  --mark:rgba(214,255,30,.55);
+  --font:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17141F;--fg:#ECE8F5;--muted:#A39DB3;--line:#2C2738;--soft:#211C2C;--violet:#A57BFF;--violet-ink:#C3A6FF;--mark:rgba(214,255,30,.28);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#17141F;--fg:#ECE8F5;--muted:#A39DB3;--line:#2C2738;--soft:#211C2C;--violet:#A57BFF;--violet-ink:#C3A6FF;--mark:rgba(214,255,30,.28);color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.75;word-break:keep-all;padding-bottom:88px}
+a{color:var(--violet-ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--violet);outline-offset:2px;border-radius:4px}
+h1,h2,h3{text-wrap:balance;margin:0;line-height:1.35}
+p{margin:0}
+mark{background:linear-gradient(transparent 55%,var(--mark) 55%);color:inherit;padding:0 2px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* Nav */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:31;background:var(--bg)}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:20px;height:60px}
+.logo{font-weight:800;font-size:18px;color:var(--fg);text-decoration:none;white-space:nowrap;letter-spacing:-.01em}
+.logo b{color:var(--violet)}
+.menu{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none;min-width:0}
+.menu::-webkit-scrollbar{display:none}
+.menu a{color:var(--fg);text-decoration:none;font-size:15px;font-weight:500;padding:6px 10px;border-radius:6px;white-space:nowrap}
+.menu a:hover{background:var(--soft)}
+.apply-sm{background:var(--violet);color:#fff!important;font-weight:700;padding:8px 16px;border-radius:8px;text-decoration:none;white-space:nowrap;font-size:15px}
+.apply-sm:hover{background:var(--violet-ink)}
+
+/* Cover */
+.cover{background:#8A45FF;overflow:hidden}
+.cover-in{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1fr 360px;gap:40px;align-items:end;padding-block:56px 0}
+.cover-copy{padding-bottom:56px;display:flex;flex-direction:column;gap:18px;color:#fff;min-width:0}
+.cover-copy .tag{align-self:flex-start;background:#140A2B;color:var(--lime);font-weight:700;font-size:14px;padding:5px 12px;border-radius:999px}
+.cover h1{font-size:clamp(34px,5.6vw,60px);font-weight:900;letter-spacing:-.03em;line-height:1.12}
+.cover h1 em{font-style:normal;color:var(--lime)}
+.cover .sub{font-size:clamp(18px,2.2vw,22px);font-weight:600;opacity:.95}
+.cover dl{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:6px 0 0;font-variant-numeric:tabular-nums}
+.cover dt{font-weight:800;color:#140A2B}
+.cover dd{margin:0}
+.cover .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:16px;text-decoration:none;padding:13px 22px;border-radius:10px}
+.btn-lime{background:var(--lime);color:#140A2B}
+.btn-lime:hover{filter:brightness(.95)}
+.btn-line{color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.8)}
+.btn-line:hover{background:rgba(255,255,255,.1)}
+.cover img{display:block;width:100%;height:auto;max-width:100%;border-radius:10px 10px 0 0;box-shadow:0 -10px 40px rgba(20,10,43,.35)}
+
+/* Page column */
+.page{max-width:760px;margin:0 auto;padding-block:56px 24px;display:flex;flex-direction:column;gap:64px}
+.blk{display:flex;flex-direction:column;gap:16px}
+.blk>h2{font-size:28px;font-weight:800;letter-spacing:-.02em;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.blk h3{font-size:19px;font-weight:700}
+.lead{font-size:18px}
+.small{font-size:14px;color:var(--muted)}
+ul.b,ol.b{margin:0;padding-left:1.3em;display:flex;flex-direction:column;gap:6px}
+ul.e{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+ul.e li{display:grid;grid-template-columns:28px 1fr;gap:6px}
+ul.e li>span:first-child{font-size:18px;line-height:1.6}
+.callout{display:grid;grid-template-columns:28px 1fr;gap:10px;background:var(--soft);border-radius:8px;padding:16px 18px}
+.callout>span:first-child{font-size:20px;line-height:1.4}
+.callout.v{background:color-mix(in srgb,var(--violet) 10%,var(--bg))}
+.topics{display:flex;gap:10px;flex-wrap:wrap}
+.topics span{font-weight:800;font-size:20px;padding:10px 20px;border-radius:10px;background:var(--violet);color:#fff}
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.box{border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.box h3{display:flex;gap:8px;align-items:center}
+.box ul{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:6px;font-size:15px}
+.stage{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.stage:last-of-type{border-bottom:0}
+.stage .ic{width:44px;height:44px;border-radius:10px;background:var(--soft);display:grid;place-items:center;font-size:22px}
+.stage .k{font-size:13px;font-weight:700;color:var(--violet-ink);letter-spacing:.04em}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:11px 16px;border-bottom:1px solid var(--line);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+th{background:var(--soft);font-size:14px;color:var(--muted);font-weight:600}
+td.on{color:var(--violet-ink);font-weight:800}
+td.tbd{color:var(--muted)}
+.links{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.links a{display:flex;align-items:center;gap:10px;padding:12px 14px;border:1px solid var(--line);border-radius:8px;color:var(--fg);text-decoration:none;font-weight:600;min-width:0}
+.links a:hover{background:var(--soft)}
+.links a small{margin-left:auto;color:var(--muted);font-weight:400}
+details{border-bottom:1px solid var(--line);padding:10px 0}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;gap:8px}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"▸";color:var(--muted);transition:transform .15s}
+details[open] summary::before{transform:rotate(90deg)}
+details ul{margin:10px 0 0;padding-left:1.4em;display:flex;flex-direction:column;gap:6px;font-size:15px}
+.chip{display:inline-flex;align-items:center;gap:8px;background:var(--soft);border-radius:8px;padding:5px 6px 5px 12px;font-variant-numeric:tabular-nums}
+.chip span{user-select:all}
+.chip button{font:inherit;font-size:13px;font-weight:700;background:var(--violet);color:#fff;border:0;border-radius:6px;padding:3px 10px;cursor:pointer}
+.contact{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+
+footer{border-top:1px solid var(--line);margin-top:40px}
+.foot{max-width:1080px;margin:0 auto;padding-block:28px;display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;color:var(--muted)}
+.foot a{color:var(--muted);text-decoration:none}
+.foot a:hover{color:var(--fg)}
+.foot .c{width:100%;margin-top:6px}
+
+/* Video card */
+.video{position:relative;display:block;aspect-ratio:16/9;max-width:100%;border-radius:12px;overflow:hidden;background:#140A2B;text-decoration:none;color:#fff}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 58%;opacity:.55;transition:transform .3s ease,opacity .3s}
+.video:hover img{transform:scale(1.03);opacity:.7}
+.video .play{position:absolute;left:50%;top:50%;width:76px;height:54px;margin:-27px 0 0 -38px;border-radius:14px;background:#FF0033;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.video .play::after{content:"";border-left:20px solid #fff;border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:4px}
+.video .cap{position:absolute;left:0;right:0;bottom:0;padding:16px 18px;background:linear-gradient(transparent,rgba(20,10,43,.85));font-weight:700;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.video .cap small{font-weight:500;color:#D9CCFF}
+@media (prefers-reduced-motion:reduce){.video img{transition:none}}
+
+.pitch{font-size:16px;opacity:.92}
+.flow{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.flow li{border:1px solid var(--line);border-radius:12px;padding:18px 16px;display:flex;flex-direction:column;gap:6px;text-align:center;align-items:center;min-width:0;position:relative}
+.flow li+li::before{content:"›";position:absolute;left:-11px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:20px;background:var(--bg);line-height:1}
+.flow .no{font-weight:800;color:var(--violet-ink)}
+.flow h3{font-size:18px}
+.flow .mo{font-size:13px;font-weight:700;color:var(--violet-ink);background:color-mix(in srgb,var(--violet) 12%,var(--bg));border-radius:999px;padding:1px 10px}
+.flow p{font-size:14px;color:var(--muted);flex:1;margin-top:4px}
+.flow .ms{font-size:14px;font-weight:700;border-top:1px solid var(--line);padding-top:10px;width:100%}
+.cols4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.badge-new{font-size:11px;font-weight:700;background:var(--lime);color:#140A2B;border-radius:4px;padding:1px 6px;vertical-align:2px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:10px 24px;margin:0}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0}
+.proc{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.proc li{background:var(--soft);border-radius:8px;padding:8px 14px;font-weight:700;display:flex;flex-direction:column;line-height:1.3;text-align:center}
+.proc li small{font-weight:500;font-size:12px;color:var(--muted)}
+.proc li+li::before{content:"→";position:absolute;margin-left:-26px;margin-top:6px;color:var(--muted);font-weight:400}
+.proc li+li{margin-left:18px;position:relative}
+.proc li:last-child{background:var(--violet);color:#fff}
+@media (max-width:860px){.flow,.cols4{grid-template-columns:1fr 1fr}.flow li+li::before{display:none}}
+@media (max-width:480px){.flow,.cols4{grid-template-columns:1fr}}
+
+.faq{display:flex;flex-direction:column;border-top:2px solid var(--fg)}
+.qa{padding:4px 0}
+.qa summary{padding:12px 0;font-weight:700;align-items:baseline}
+.qa .q{color:var(--violet-ink);font-weight:900;margin-right:2px}
+.qa p{margin:0 0 12px 22px;padding:12px 16px;background:var(--soft);border-radius:8px;font-size:15px}
+
+/* Curriculum view */
+.cv{max-width:860px;margin:0 auto;padding-block:40px 24px;display:flex;flex-direction:column;gap:28px}
+.crumb{font-size:14px;color:var(--muted)}
+.crumb a{color:var(--muted)}
+.cv h1{font-size:clamp(30px,4.4vw,42px);font-weight:900;letter-spacing:-.03em}
+.cv-sum{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.cv-sum div{background:var(--soft);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.cv-sum small{color:var(--muted);font-size:13px}
+.cv-sum b{font-size:17px;font-variant-numeric:tabular-nums}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;position:sticky;top:calc(60px + env(safe-area-inset-top,0px));z-index:5;background:var(--bg);padding-block:10px;border-bottom:1px solid var(--line)}
+.tabs button{font:inherit;font-size:14px;font-weight:600;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:999px;padding:6px 14px;cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--violet);border-color:var(--violet);color:#fff}
+.tabs button span{opacity:.7;font-weight:500;margin-left:4px;font-variant-numeric:tabular-nums}
+.stage-h{display:flex;align-items:baseline;gap:12px;margin-top:18px;padding-bottom:8px;border-bottom:2px solid var(--fg)}
+.stage-h h2{font-size:22px;font-weight:800}
+.stage-h span{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
+.day{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:18px 0;border-bottom:1px solid var(--line)}
+.day .when{font-weight:800;font-size:17px;font-variant-numeric:tabular-nums;line-height:1.4}
+.day .when small{display:block;font-weight:600;font-size:12px;color:var(--violet-ink);margin-top:4px}
+.day .ss{display:flex;flex-direction:column;gap:14px;min-width:0}
+.ses{display:grid;grid-template-columns:110px 1fr;gap:12px}
+.ses .tm{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums;padding-top:2px}
+.ses .cat{display:inline-block;font-size:12px;font-weight:700;color:var(--violet-ink);background:color-mix(in srgb,var(--violet) 12%,var(--bg));border-radius:5px;padding:1px 8px;margin-bottom:4px}
+.ses h3{font-size:16px;font-weight:700;line-height:1.5}
+.ses ul{margin:4px 0 0;padding-left:1.1em;color:var(--muted);font-size:14px;line-height:1.6}
+.ses .sn{font-size:13px;color:var(--muted);margin-top:4px}
+.dnote{font-size:14px;background:var(--soft);border-radius:8px;padding:8px 12px;display:flex;gap:8px}
+.day.off .when{color:var(--muted)}
+.day.off .dnote{background:transparent;padding:0;color:var(--muted)}
+.day.key{background:linear-gradient(90deg,color-mix(in srgb,var(--lime) 28%,var(--bg)),var(--bg) 70%);border-radius:10px;padding-left:14px;padding-right:14px;border-bottom-color:transparent;margin-block:6px}
+.day.share .when small{color:var(--fg)}
+.cv-foot{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;padding:18px;border:1px dashed var(--line);border-radius:12px;font-size:14px;color:var(--muted)}
+@media (max-width:700px){
+  .cv-sum{grid-template-columns:1fr 1fr}
+  .day{grid-template-columns:1fr;gap:10px}
+  .ses{grid-template-columns:1fr;gap:2px}
+}
+
+/* Floating apply */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;padding-bottom:calc(14px + env(safe-area-inset-bottom,0px));pointer-events:none}
+.bar-in{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:14px;justify-content:space-between;background:#140A2B;color:#fff;border-radius:14px;padding:10px 10px 10px 18px;box-shadow:0 10px 30px rgba(20,10,43,.3);pointer-events:auto}
+.bar b{color:var(--lime);font-size:15px;display:block;line-height:1.3}
+.bar small{color:#B9A8E6;font-size:13px}
+.bar .btn{padding:10px 18px;font-size:15px}
+
+@media (max-width:860px){
+  .cover-in{grid-template-columns:1fr;gap:28px;padding-block:40px 0}
+  .cover-copy{padding-bottom:0}
+  .cover .poster{max-width:320px;justify-self:center}
+  .cols3{grid-template-columns:1fr}
+  .links{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .menu{display:none}
+  .apply-sm{margin-left:auto}
+  .bar small{display:none}
+}
+</style>
+</head>
+<body>
+<nav class="nav gut" aria-label="주요 메뉴">
+  <div class="nav-in">
+    <a class="logo" href="#home"><b>Sunny</b> Scholar</a>
+    <div class="menu">
+      <a href="#overview">모집개요</a>
+      <a href="#curriculum">커리큘럼</a>
+      <a href="#support">지원 내용</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a class="apply-sm" href="https://www.besunny.com/" target="_blank" rel="noopener">지원하기</a>
+  </div>
+</nav>
+
+<header class="cover gut" id="top" data-view="main">
+  <div class="cover-in">
+    <div class="cover-copy">
+      <span class="tag">2027 Sunny Scholar 6기 모집</span>
+      <h1>Deep Dive into<br><em>Social Problems</em></h1>
+      <p class="sub">질문하고, 파고들고, 현장에서 증명합니다.</p>
+      <p class="pitch">SUNNY Scholar 6기에서 사회문제를 끝까지 파고들 대학생 25명을 찾습니다.</p>
+      <dl>
+        <dt>모집기간</dt><dd>2026.11.16 – 2026.12.06</dd>
+        <dt>활동기간</dt><dd>2027년 1월 – 9월 (약 9개월)</dd>
+        <dt>활동혜택</dt><dd>연구별 최대 250만원의 개발비 지원</dd>
+      </dl>
+      <div class="btns">
+        <a class="btn btn-lime" href="https://www.besunny.com/" target="_blank" rel="noopener">지원하기 →</a>
+        <a class="btn btn-line" href="#curriculum">커리큘럼 보기</a>
+      </div>
+    </div>
+    <div class="poster"><img src="keyvi.jpg" alt="Sunny Scholar 2027 포스터: 진짜 사회문제를 해결해보는 경험" width="1192" height="1685"></div>
+  </div>
+</header>
+
+<main class="page gut" data-view="main">
+
+  <section class="blk" id="about">
+    <h2>Sunny Scholar 소개</h2>
+    <p class="lead">SUNNY Scholar는 <mark><b>사회문제에 Deep Dive하는 대학생 교육 프로그램</b></mark>입니다.</p>
+    <p>눈에 보이는 현상에 머무르지 않고, 문제의 구조와 원인까지 깊이 파고듭니다. 그렇게 찾아낸 핵심 문제에 대한 솔루션을 현장에서 직접 검증합니다.</p>
+    <div class="callout v"><span aria-hidden="true">💡</span><div><b>막연했던 관심이, 내가 직접 풀어본 문제가 됩니다.</b></div></div>
+    <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/kxX7BJC-65s" title="Sunny Scholar 영상" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  </section>
+
+  <section class="blk" id="steps">
+    <h2>9개월 동안 이런 과정을 거칩니다</h2>
+    <p class="small" style="font-size:15px">질문하고, 파고들고, 증명하고, 기록하는 9개월</p>
+    <ol class="flow">
+      <li><span class="no">①</span><h3>연구 준비</h3><span class="mo">1 – 3월</span><p>시스템 사고 교육과 현장 경험을 통해 주제에 Deep Dive하고, 우리 팀이 해결할 문제를 정의합니다.</p><span class="ms">문제정의 발표</span></li>
+      <li><span class="no">②</span><h3>연구 계획</h3><span class="mo">3 – 5월</span><p>정의한 문제를 바탕으로 해결 가설을 세우고, 연구 수행 계획을 수립합니다.</p><span class="ms">연구계획 발표</span></li>
+      <li><span class="no">③</span><h3>연구 수행</h3><span class="mo">5 – 8월</span><p>가설이 현장에서 작동하는지 확인하고 수정을 반복하며 문제 해결의 가능성에 가까워집니다.</p><span class="ms">최종 성과 공유회</span></li>
+      <li><span class="no">④</span><h3>연구 아카이빙</h3><span class="mo">8 – 9월</span><p>1~3단계의 연구를 최종 리포트로 정리해 같은 문제를 고민하는 대학생·기관과 공유합니다.</p><span class="ms">수료식</span></li>
+    </ol>
+    <div class="callout"><span aria-hidden="true">👉</span><div><a href="#curriculum"><b>상세 커리큘럼 보기</b></a><br><span class="small">날짜별 교육 일정을 확인할 수 있습니다.</span></div></div>
+  </section>
+
+  <section class="blk" id="topics">
+    <h2>2027년 Sunny Scholar 주제</h2>
+    <div class="topics"><span>자립준비청년</span><span>장애</span><span>다문화</span></div>
+    <p class="small">※ 팀빌딩 후 팀원들과 협의하여 3개 주제 중 1개를 선택합니다.</p>
+  </section>
+
+  <section class="blk" id="support">
+    <h2>깊게 파고들 수 있도록 이렇게 지원합니다</h2>
+    <p class="lead">깊이 파고들 수 있도록, 네 가지로 지원합니다.</p>
+    <div class="cols4">
+      <div class="box"><h3><span aria-hidden="true">📚</span>교육</h3><ul>
+        <li>시스템 사고</li><li>데스크 리서치·인터뷰</li><li>솔루션 설계·검증</li><li>피칭</li><li><b class="new">독서 세션</b> <span class="badge-new">6기 신설</span></li></ul></div>
+      <div class="box"><h3><span aria-hidden="true">🌱</span>경험</h3><ul>
+        <li>당사자 인터뷰</li><li>현장 방문</li><li>아티클·논문 분석, 독서</li><li>솔루션 현장 적용</li></ul></div>
+      <div class="box"><h3><span aria-hidden="true">🤝</span>지원</h3><ul>
+        <li>활동비</li><li>솔루션 제작비</li><li>현장 전문가 멘토링</li><li>전문 파트너 기관 교육</li></ul></div>
+      <div class="box"><h3><span aria-hidden="true">🏃</span>페이스메이커</h3><ul>
+        <li>전담 매니저</li><li>정기 1:1 면담</li></ul><p class="small">팀 활동과 개인의 성장을 함께 살핍니다.</p></div>
+    </div>
+  </section>
+
+  <section class="blk" id="people">
+    <h2>이런 분을 기다립니다</h2>
+    <ul class="e">
+      <li><span aria-hidden="true">☝️</span><span><b>시작이 막막한 분</b><br>사회문제에 관심은 많지만, 어디서부터 탐구해야 할지 모르는 분</span></li>
+      <li><span aria-hidden="true">✌️</span><span><b>끝까지 해보고 싶은 분</b><br>문제 분석부터 현장 검증까지, 사회문제 해결의 전 과정을 직접 경험하고 싶은 분</span></li>
+      <li><span aria-hidden="true">🤘</span><span><b>꾸준히 함께할 수 있는 분</b><br>약 9개월(1~9월), 주로 토요일에 진행되는 과정에 성실히 참여할 수 있는 분</span></li>
+    </ul>
+  </section>
+
+  <section class="blk" id="program">
+    <h2>프로그램 일정 및 장소</h2>
+    <dl class="kv">
+      <dt>활동 기간</dt><dd>2027년 1월 – 9월 (약 9개월)</dd>
+      <dt>운영 방식</dt><dd>주로 토요일 진행, 일부 특강은 평일</dd>
+      <dt>장소</dt><dd>서울시 용산구 장문로 60, 행복나눔재단</dd>
+      <dt>상세 일정</dt><dd><a href="#curriculum">커리큘럼 보기 →</a></dd>
+    </dl>
+    <p class="small">※ 일정은 프로그램 사정에 따라 변동될 수 있습니다.</p>
+  </section>
+
+  <section class="blk" id="overview">
+    <h2>모집 대상 및 선발 일정</h2>
+    <dl class="kv">
+      <dt>지원 자격</dt><dd>2027년 기준 대학교 3학년 이상 재학생·휴학생 및 졸업예정자<br><span class="small">(2027년 8월 졸업 예정자 지원 가능)</span></dd>
+      <dt>선발 인원</dt><dd><b>25명</b></dd>
+    </dl>
+    <h3 style="margin-top:8px">선발 절차</h3>
+    <ol class="proc">
+      <li>서류 심사</li><li>1차 면접<small>토론</small></li><li>선발 교육</li><li>최종 면접<small>PT·심층</small></li><li>최종 합격</li>
+    </ol>
+    <h3 style="margin-top:8px" id="schedule">선발 일정</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>단계</th><th>일정</th><th>비고</th></tr></thead>
+        <tbody>
+          <tr><td><b>서류 접수</b></td><td class="on">2026.11.16(월) – 12.06(일)</td><td></td></tr>
+          <tr><td><b>서류 발표</b></td><td>2026.12.14(월) 오후 2시</td><td></td></tr>
+          <tr><td><b>1차 면접</b></td><td>2026.12.22(화) – 12.23(수)</td><td>토론 면접</td></tr>
+          <tr><td><b>선발 교육</b></td><td>2026.12.26(토)</td><td>PT 면접 대비 기초 교육 (오프라인)</td></tr>
+          <tr><td><b>최종 면접</b></td><td>2026.12.28(월) – 12.30(수)</td><td>PT 면접</td></tr>
+          <tr><td><b>최종 합격자 발표</b></td><td class="on">2027.01.05(화) 오후 2시</td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="blk" id="apply">
+    <h2>지원 방법 및 유의 사항</h2>
+    <div class="callout v"><span aria-hidden="true">✍️</span><div>상단 메뉴 또는 아래의 <b>지원하기</b> 버튼을 눌러 지원서를 작성해 주세요.<br><a class="apply-sm" style="display:inline-block;margin-top:10px" href="https://www.besunny.com/" target="_blank" rel="noopener">지원서 작성하기 →</a></div></div>
+    <h3 style="margin-top:8px">유의 사항</h3>
+    <ul class="b">
+      <li><b>OT 워크숍(1/13~16) 불참 시 합격이 취소됩니다.</b> 일정을 꼭 확인한 후 지원해 주세요.</li>
+      <li>제출한 지원서는 다시 열람할 수 없으니, 작성 내용은 개별 저장해 두시길 권장합니다.</li>
+      <li>첨부파일은 선택 사항입니다. 지원서 항목 외에 자신을 표현하고 싶은 콘텐츠가 있다면 형식 제한 없이 첨부해 주세요.</li>
+      <li>제출 서류는 반환되지 않으며, 결과물의 권리·활용은 주최 측과 협의 후 결정할 수 있습니다.</li>
+      <li>무단 도용·표절 등 저작권 위반 행위는 본인에게 책임이 있으며, 허위 또는 부정한 방법으로 선발된 사실이 확인될 경우 선발 취소 및 지원 비용을 환수합니다.</li>
+      <li>일정은 주최 기관의 사정에 따라 사전 공지 후 변경될 수 있습니다.</li>
+      <li><b>마감일에는 접속이 몰려 접수가 원활하지 않을 수 있으니 미리 제출해 주세요.</b> 서버 장애를 포함한 어떠한 사유로도 마감 이후 접수는 불가합니다.</li>
+    </ul>
+    <h3 style="margin-top:8px">문의</h3>
+    <div class="contact">
+      <span>SUNNY 사무국 조신화 매니저</span>
+      <span class="chip"><span>070-7601-0877</span><button type="button" data-copy="070-7601-0877">복사</button></span>
+      <span class="chip"><span>joess@skhappiness.org</span><button type="button" data-copy="joess@skhappiness.org">복사</button></span>
+    </div>
+  </section>
+</main>
+
+<div id="faq-view" class="gut" hidden>
+  <div class="cv">
+    <p class="crumb"><a href="#home">모집개요</a> / FAQ</p>
+    <h1>자주 묻는 질문</h1>
+    <div class="faq">
+    <details class="qa"><summary><span class="q">Q</span>면접 진행은 어떻게 되나요?</summary><p>1차 면접은 온라인, PT 면접은 오프라인으로 진행되며, PT 면접자에게는 소정의 면접비가 지급될 예정입니다. PT 면접 전, 선발 교육(오프라인)을 통해 PT 면접에 도움이 되는 교육을 제공해 드릴 예정입니다. <b>(선발 교육 필참)</b></p></details>
+    <details class="qa"><summary><span class="q">Q</span>지방 거주자도 지원 가능한가요? 교육은 온라인으로 진행되나요?</summary><p>모든 과정은 오프라인으로 진행됩니다. 팀 단위 과제 및 활동이 계획되어 있어, 전 과정에 원활히 활동 가능하신 분들만 지원 가능합니다.</p></details>
+    <details class="qa"><summary><span class="q">Q</span>선발 뒤 팀 매칭은 어떻게 이루어지나요?</summary><p>최종 선발 후 진행되는 오리엔테이션 과정을 통해 팀 매칭 및 팀 빌딩을 진행하게 되며, <b>한 팀당 5명 내외로 구성</b>됩니다. 팀 구성 방법 등은 <b>오리엔테이션에서 안내</b>될 예정입니다.</p></details>
+    <details class="qa"><summary><span class="q">Q</span>지원 요건은 어떻게 되나요?</summary><p>대학교(전문대, 학점은행제 포함) 3학년 이상의 재학, 휴학, 졸업 예정자 모두 지원 가능합니다.</p></details>
+    <details class="qa"><summary><span class="q">Q</span>대학원생도 지원이 가능한가요?</summary><p>써니 스콜라는 대학생 대상 커리큘럼으로 진행되어 대학원생은 참여가 어렵습니다.</p></details>
+    <details class="qa"><summary><span class="q">Q</span>1, 2, 3단계 중 일부만 참여 가능한가요?</summary><p>전 단계에 참여 가능하신 분만 지원 가능합니다.</p></details>
+    <details class="qa"><summary><span class="q">Q</span>오리엔테이션 워크숍은 숙박이 제공되나요?</summary><p>오리엔테이션은 3박 4일로 진행되며, 숙박이 제공됩니다. (별도 참가비 없음) 단, 3박 4일 모두 참여 가능하신 분만 지원 가능합니다.</p></details>
+    <details class="qa"><summary><span class="q">Q</span>분석할 사회문제는 원하는 주제로 선택이 가능한가요?</summary><p>사회문제는 모집 공고에 나와 있는 <b>장애, 다문화, 자립준비청년</b> 내에서 선택이 가능하며, 팀 빌딩 이후 팀 내에서 협의하여 사회문제를 선택할 수 있습니다.</p></details>
+    </div>
+    <div class="cv-foot"><span>더 궁금한 점은 SUNNY 사무국 조신화 매니저(070-7601-0877, joess@skhappiness.org)에게 문의해 주세요.</span><a class="apply-sm" href="https://www.besunny.com/" target="_blank" rel="noopener">지원하기</a></div>
+  </div>
+</div>
+
+<div id="curr-view" class="gut" hidden>
+  <div class="cv">
+    <p class="crumb"><a href="#home">모집개요</a> / 커리큘럼</p>
+    <h1>2027 Sunny Scholar 커리큘럼</h1>
+    <div class="cv-sum">
+      <div><small>활동 기간</small><b>1.13 – 9.18</b></div>
+      <div><small>정규 일정</small><b>토 10:00 – 18:00</b></div>
+      <div><small>일부 수요일</small><b>1 – 2월 연구준비</b></div>
+      <div><small>교육 장소</small><b>행복나눔재단</b></div>
+    </div>
+    <div class="tabs" role="group" aria-label="단계별 보기" id="tabs"></div>
+    <div id="days"></div>
+    <div class="cv-foot"><span>일정은 프로그램 사정에 따라 변동될 수 있습니다. 교육 장소: 서울시 용산구 장문로 60 행복나눔재단</span><a class="apply-sm" href="https://www.besunny.com/" target="_blank" rel="noopener">지원하기</a></div>
+  </div>
+</div>
+
+<footer class="gut">
+  <div class="foot">
+    <a href="#curriculum">커리큘럼</a>
+    <a href="#faq">FAQ</a>
+    <a href="https://sunnyscholar.oopy.io/9225533b-9031-4c13-9a96-a01235e06ad4" target="_blank" rel="noopener">지원 유의사항</a>
+    <a href="https://www.besunny.com/main.do" target="_blank" rel="noopener">Besunny.com</a>
+    <a href="https://www.youtube.com/@SKSUNNY_official" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://www.instagram.com/sksunny_official/" target="_blank" rel="noopener">Instagram</a>
+    <span class="c">© Sunny · 행복나눔재단</span>
+  </div>
+</footer>
+
+<div class="bar gut">
+  <div class="bar-in">
+    <div><b id="dday">서류 접수 2026.11.16 – 12.06</b><small id="dsub">12월 6일(일) 23:59 마감</small></div>
+    <a class="btn btn-lime" href="https://www.besunny.com/" target="_blank" rel="noopener">지원하기</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var DATA=[{"stage":"오리엔테이션","label":"1.13(수) – 1.16(토)","iso":"2027-01-13","s":[{"t":"종일 · 3박 4일","c":"워크숍","title":"오리엔테이션 및 팀빌딩","d":["팀 구성 및 빌딩","문제분석/문제정의 워크숍"],"n":null}],"note":"3박 4일 일정이며, 불참 시 프로그램에 참여할 수 없습니다.","kind":"key"},{"stage":"연구준비","label":"1.20(수)","iso":"2027-01-20","s":[{"t":"10:00–15:00","c":"사회문제 분석","title":"문제정의 마인드셋 및 기초탐색","d":["문제영역 선정, 임팩트갭 캔버스","문제정의 오류 유형, 커네빈 프레임워크"],"n":null},{"t":"15:00–18:00","c":"특강","title":"노션 교육","d":[],"n":null}],"note":null,"kind":null},{"stage":"연구준비","label":"1.23(토)","iso":"2027-01-23","s":[{"t":"10:00–15:00","c":"사회문제 분석","title":"사회문제 분석(1)","d":["멀티 페르소나 프로필, 공감지도, 문제 가설 제작","현상과 피해"],"n":null},{"t":"15:00–18:00","c":"데스크 리서치","title":"학술 생태계 이해하기(거시)","d":["자료 넓혀 찾기(보고서·기고글·포럼 영상)","AI 활용 좋은 사례·나쁜 사례"],"n":null}],"note":"당사자 인터뷰 섭외 시작 (2/13까지 당사자 3명 인터뷰)","kind":null},{"stage":"연구준비","label":"1.27(수)","iso":"2027-01-27","s":[{"t":"10:00–13:00","c":"인터뷰 교육","title":"인터뷰 교육 1회","d":["인터뷰의 필요성·OT·상호 인터뷰","사회혁신과 인터뷰, 상호 인터뷰 실습"],"n":null},{"t":"14:00–17:00","c":"독서","title":"독서 세션 1회","d":["OT·도서 선택","도서 6권 소개·발췌본 읽기, 책 선택, 책별 첫 모임"],"n":null}],"note":null,"kind":null},{"stage":"연구준비","label":"1.30(토)","iso":"2027-01-30","s":[{"t":"10:00–15:00","c":"사회문제 분석","title":"사회문제 분석(2)","d":["이해관계자지도 또는 고객여정지도, 수직·수평 구체화","사회문제 해상도 높이기"],"n":null},{"t":"15:00–18:00","c":"팀활동","title":"팀활동","d":[],"n":null}],"note":"봉사활동처(단기) 서치","kind":null},{"stage":"연구준비","label":"2.3(수)","iso":"2027-02-03","s":[{"t":"10:00–15:00","c":"사회문제 분석","title":"사회문제 시스템 지도 제작","d":["가설 우선순위 캔버스, 캐주얼 매핑","지도 제작 유형과 방법"],"n":null},{"t":"14:00–17:00","c":"특강","title":"퍼실리테이션 교육 1차","d":["강점검사 및 팀 빌딩","왜 강점인가 / 나·동료 강점 이해 / 팀 강점 활용 전략"],"n":null}],"note":null,"kind":null},{"stage":"연구준비","label":"2.6(토)","iso":"2027-02-06","s":[],"note":"설 연휴로 쉬어갑니다.","kind":"off"},{"stage":"연구준비","label":"2.10(수)","iso":"2027-02-10","s":[{"t":"10:00–13:00","c":"데스크 리서치","title":"논문 이해하기(미시)","d":["Start Paper·Key Paper 직접 읽기, 내 문제에 적용"],"n":null},{"t":"14:00–17:00","c":"인터뷰 교육","title":"인터뷰 교육 2회","d":["인터뷰 방법론 및 설계","좋은 질문, 전·중·후 주의사항, 대상·목적별 인터뷰, 팀별 설계"],"n":null}],"note":"봉사활동 시작","kind":null},{"stage":"연구준비","label":"2.13(토)","iso":"2027-02-13","s":[{"t":"10:00–15:00","c":"사회문제 분석","title":"사회문제 시스템 센싱","d":["인터뷰 녹취록에서 가설·질문 추출, 솔루션 해체 WPR","마사 누스바움 『정치적 감정』"],"n":null},{"t":"15:00–18:00","c":"특강","title":"선배 써니와의 만남 & 비즈니스 매너 특강","d":[],"n":null}],"note":null,"kind":null},{"stage":"연구준비","label":"2.17(수)","iso":"2027-02-17","s":[{"t":"10:00–13:00","c":"공유","title":"1차 사회문제 분석 내용 공유 및 피드백 (중간 발표)","d":[],"n":null},{"t":"14:00–16:00","c":"공유","title":"팀별 피드백 정리","d":[],"n":null}],"note":null,"kind":"share"},{"stage":"연구준비","label":"2.20(토)","iso":"2027-02-20","s":[{"t":"10:00–15:00","c":"사회문제 분석","title":"시스템 다이내믹스 분석","d":["부분 인과지도 작성, 문제 원형 탐색","시스템 문제 12가지 원형"],"n":null},{"t":"15:00–18:00","c":"팀활동","title":"팀활동","d":[],"n":null}],"note":"2/22 – 2/26 평일 중 팀별 인과지도 멘토링","kind":null},{"stage":"연구준비","label":"2.24(수)","iso":"2027-02-24","s":[{"t":"10:00–15:00","c":"데스크 리서치","title":"이론 해석 워크숍(실제)","d":["문제 가설을 해석할 논문 찾아 리뷰, 가설 디벨롭, 다음 현장 계획"],"n":null},{"t":"15:00–18:00","c":"인터뷰 교육","title":"인터뷰 교육 3회","d":["인터뷰 분석·코딩","코딩, 에믹/에틱 관점, 코드북, 팀별 코딩 실습"],"n":null}],"note":null,"kind":null},{"stage":"연구준비","label":"2.27(토)","iso":"2027-02-27","s":[{"t":"10:00–15:00","c":"사회문제 분석","title":"사회문제 인과 분석","d":["인과 사다리 실습, 반사실 훈련","주디아 펄 『인과의 사다리』, 인과 유형론"],"n":null},{"t":"15:00–18:00","c":"특강","title":"재단 내부 특강(R&D)","d":[],"n":null}],"note":null,"kind":null},{"stage":"연구준비","label":"3.6(토)","iso":"2027-03-06","s":[{"t":"10:00–15:00","c":"사회문제 분석","title":"사회문제 최종 가설 도출","d":["시스템 북극성과 개입지점, 인과지도에 데이터 추가, 가설 카드"],"n":null},{"t":"15:00–18:00","c":"인터뷰 교육","title":"인터뷰 교육 4회","d":["인터뷰 해석·인사이트","코드 간 관계·패턴 발견, 팀별 인사이트 구조화·발표"],"n":null}],"note":null,"kind":null},{"stage":"연구준비","label":"3.13(토)","iso":"2027-03-13","s":[{"t":"10:00–15:00","c":"사회문제 분석","title":"문제정의 점검","d":["피어멘토링","문제정의 요약 리뷰"],"n":null},{"t":"15:00–18:00","c":"팀활동","title":"발표 준비","d":[],"n":null}],"note":null,"kind":null},{"stage":"연구준비","label":"3.20(토)","iso":"2027-03-20","s":[{"t":"10:00–13:00","c":"공유","title":"문제정의 발표 및 피드백","d":[],"n":null},{"t":"14:00–17:00","c":"공유","title":"팀별 피드백 정리","d":[],"n":null}],"note":null,"kind":"share"},{"stage":"연구계획수립","label":"3.27(토)","iso":"2027-03-27","s":[{"t":"10:00–13:00","c":"보고서 작성","title":"문제정의보고서 워크숍","d":["1단계 보고서 작성 교육"],"n":null},{"t":"14:00–18:00","c":"솔루션 도출","title":"문제해결 가설 도출(1)","d":["지렛대 설치하기, 아이디어 발산","솔루션 마인드셋, 문제해결 양상"],"n":"인터뷰 및 현장 회고 포함"}],"note":null,"kind":null},{"stage":"연구계획수립","label":"4.3(토)","iso":"2027-04-03","s":[{"t":"10:00–15:00","c":"솔루션 도출","title":"문제해결 가설 도출(2)","d":["피해-솔루션 대응 카드","솔루션 도출 방향성 6가지"],"n":null},{"t":"15:00–18:00","c":"독서","title":"독서 세션 2회","d":["Set 1 토론: 직소 방식 5개 조, 책별 라운드, 팀 연결"],"n":null}],"note":null,"kind":null},{"stage":"연구계획수립","label":"4.10(토) · 4.17(토)","iso":"2027-04-10","s":[],"note":"중간고사 기간으로 2주간 쉬어갑니다.","kind":"off"},{"stage":"연구계획수립","label":"4.24(토)","iso":"2027-04-24","s":[{"t":"10:00–15:00","c":"솔루션 도출","title":"문제해결 가설 실험 설계 및 수행","d":["변화이론 점검, 프로토타입 제작","로우 피델리티"],"n":null},{"t":"15:00–18:00","c":"특강","title":"퍼실리테이션 교육 2차","d":["팀 커뮤니케이션 진단","질문·경청·피드백 스킬, 회의 운영 Action Plan"],"n":null}],"note":null,"kind":null},{"stage":"연구계획수립","label":"5.1(토) – 5.2(일)","iso":"2027-05-01","s":[{"t":"종일 · 1박 2일","c":"코칭 & 디벨롭","title":"팔로업데이","d":[],"n":null}],"note":null,"kind":"key"},{"stage":"연구계획수립","label":"5.8(토)","iso":"2027-05-08","s":[{"t":"10:00–15:00","c":"솔루션 도출","title":"문제해결 가설 실험 수정","d":["PR/FAQ, 기존 활동 점검·보충","Working Backwards"],"n":null},{"t":"15:00–18:00","c":"팀활동","title":"팀별 활동","d":[],"n":null}],"note":null,"kind":null},{"stage":"연구계획수립","label":"5.15(토)","iso":"2027-05-15","s":[{"t":"10:00–13:00","c":"공유","title":"연구계획 발표 및 피드백","d":[],"n":null},{"t":"14:00–16:00","c":"공유","title":"팀별 피드백 정리","d":[],"n":null}],"note":null,"kind":"share"},{"stage":"연구수행","label":"5.22(토)","iso":"2027-05-22","s":[{"t":"10:00–15:00","c":"솔루션 검증","title":"임팩트 확산 시나리오 설계 1","d":["서비스 블루프린트","High-Fidelity 도구"],"n":null},{"t":"15:00–18:00","c":"특강","title":"R&D 솔루션 개발기 특강","d":[],"n":null}],"note":null,"kind":null},{"stage":"연구수행","label":"5.29(토)","iso":"2027-05-29","s":[{"t":"10:00–13:00","c":"특강","title":"AI 활용 프로토타입 제작 특강","d":["AI로 프로토타입을 효과적으로 만드는 방법"],"n":null}],"note":null,"kind":null},{"stage":"연구수행","label":"6.5(토)","iso":"2027-06-05","s":[{"t":"10:00–15:00","c":"솔루션 검증","title":"임팩트 확산 시나리오 설계 2","d":["근거의 기준, 임팩트 확산 스펙트럼"],"n":null},{"t":"15:00–18:00","c":"팀활동","title":"팀 논의","d":[],"n":null}],"note":null,"kind":null},{"stage":"연구수행","label":"7.2(금) – 7.4(일)","iso":"2027-07-02","s":[{"t":"전일 · 2박 3일","c":"역량강화 워크숍","title":"솔루션 진행사항 점검 및 역량강화 워크숍","d":["아카이빙 교육","선배 써니와의 만남","피칭 및 스토리라인 점검"],"n":null}],"note":"7월 말 – 8월 초 보고서 코칭","kind":"key"},{"stage":"연구수행","label":"7.31(토)","iso":"2027-07-31","s":[{"t":"10:00–15:00","c":"솔루션 검증","title":"최종 점검","d":["팀별 진행상황에 따른 최종 점검"],"n":null}],"note":null,"kind":null},{"stage":"연구수행","label":"8.7(토)","iso":"2027-08-07","s":[{"t":"10:00–18:00","c":"피칭 교육","title":"피칭 멘토링 1차","d":[],"n":null}],"note":null,"kind":null},{"stage":"연구수행","label":"8.14(토)","iso":"2027-08-14","s":[{"t":"10:00–18:00","c":"피칭 교육","title":"피칭 멘토링 2차","d":[],"n":null}],"note":null,"kind":null},{"stage":"연구수행","label":"8.20(금)","iso":"2027-08-20","s":[{"t":"13:00–17:00","c":"공유","title":"최종 성과 공유회","d":[],"n":null}],"note":null,"kind":"key"},{"stage":"아카이빙","label":"8.28(토)","iso":"2027-08-28","s":[{"t":"10:00–15:00","c":"아카이빙","title":"솔루션 리포트 교육","d":[],"n":null}],"note":null,"kind":null},{"stage":"아카이빙","label":"9.4(토)","iso":"2027-09-04","s":[{"t":"10:00–15:00","c":"아카이빙","title":"콘텐츠 교육 + 리포트 코칭","d":["솔루션 콘텐츠·코멘터리 콘텐츠"],"n":null}],"note":null,"kind":null},{"stage":"아카이빙","label":"9.11(토)","iso":"2027-09-11","s":[{"t":"10:00–15:00","c":"독서","title":"독서 세션 3회","d":["Set 2 토론·전체 회고","독서 세션 전체 회고"],"n":null}],"note":null,"kind":null},{"stage":"아카이빙","label":"9.18(토)","iso":"2027-09-18","s":[{"t":"종일","c":"수료","title":"써니스콜라 수료식","d":[],"n":null}],"note":null,"kind":"key"}];
+  var STAGES=['전체','오리엔테이션','연구준비','연구계획수립','연구수행','아카이빙'];
+  var cur='전체', tabs=document.getElementById('tabs'), days=document.getElementById('days');
+  function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function range(st){var d=DATA.filter(function(x){return x.stage===st});return d[0].label.split(/[ –·]/)[0]+' – '+d[d.length-1].label.split(' ').pop().replace(/\(.*/,'');}
+  function renderTabs(){
+    tabs.innerHTML=STAGES.map(function(s){var n=s==='전체'?DATA.length:DATA.filter(function(d){return d.stage===s}).length;
+      return '<button type="button" aria-pressed="'+(s===cur)+'" data-s="'+s+'">'+s+'<span>'+n+'</span></button>'}).join('');
+  }
+  function renderDays(){
+    var html='',last='';
+    DATA.forEach(function(d){
+      if(cur!=='전체'&&d.stage!==cur)return;
+      if(d.stage!==last){last=d.stage;var g=DATA.filter(function(x){return x.stage===d.stage});
+        html+='<div class="stage-h"><h2>'+esc(d.stage)+'</h2><span>'+esc(g[0].label.split(' ')[0].replace(/\(.*/,''))+' – '+esc(g[g.length-1].label.split(' ').pop().replace(/\(.*/,''))+' · '+g.length+'회</span></div>';}
+      var tag=d.kind==='key'?'주요 일정':d.kind==='share'?'발표·공유':d.kind==='off'?'휴강':'';
+      html+='<div class="day'+(d.kind?' '+d.kind:'')+'"><div class="when">'+esc(d.label)+(tag?'<small>'+tag+'</small>':'')+'</div><div class="ss">';
+      d.s.forEach(function(x){
+        html+='<div class="ses"><div class="tm">'+esc(x.t)+'</div><div><span class="cat">'+esc(x.c)+'</span><h3>'+esc(x.title)+'</h3>'+
+          (x.d.length?'<ul>'+x.d.map(function(i){return '<li>'+esc(i)+'</li>'}).join('')+'</ul>':'')+(x.n?'<p class="sn">'+esc(x.n)+'</p>':'')+'</div></div>';
+      });
+      if(d.note)html+='<p class="dnote"><span aria-hidden="true">📌</span><span>'+esc(d.note)+'</span></p>';
+      html+='</div></div>';
+    });
+    days.innerHTML=html;
+  }
+  tabs.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;cur=b.getAttribute('data-s');renderTabs();renderDays();});
+  renderTabs();renderDays();
+
+  var cv=document.getElementById('curr-view'), fv=document.getElementById('faq-view'), mains=document.querySelectorAll('[data-view="main"]');
+  function route(){
+    var h=(location.hash||'').slice(1), isC=h==='curriculum', isF=h==='faq';
+    cv.hidden=!isC; fv.hidden=!isF; mains.forEach(function(m){m.hidden=isC||isF});
+    if(isC||isF||h===''||h==='home'){window.scrollTo(0,0);return;}
+    var el=document.getElementById(h); if(el) el.scrollIntoView();
+  }
+  window.addEventListener('hashchange',route); route();
+})();
+</script>
+<script>
+(function(){
+  var open=new Date('2026-11-16T00:00:00+09:00'),close=new Date('2026-12-06T23:59:59+09:00'),now=new Date(),day=864e5;
+  var d=document.getElementById('dday'),s=document.getElementById('dsub');
+  if(now<open){d.textContent='11월 16일 접수 시작 · D-'+Math.ceil((open-now)/day);}
+  else if(now<=close){var n=Math.floor((close-now)/day);d.textContent=n===0?'오늘 23:59 마감':'서류 접수 중 · 마감 D-'+n;}
+  else{d.textContent='서류 접수가 마감되었습니다';s.textContent='지원해 주셔서 감사합니다';}
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.getAttribute('data-copy'),done=function(){b.textContent='복사됨';setTimeout(function(){b.textContent='복사'},1500)};
+      var sel=function(){var r=document.createRange();r.selectNodeContents(b.previousElementSibling);var w=getSelection();w.removeAllRanges();w.addRange(r);};
+      try{navigator.clipboard.writeText(t).then(done,sel)}catch(e){sel()}
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
