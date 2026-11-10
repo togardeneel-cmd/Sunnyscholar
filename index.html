@@ -280,6 +280,14 @@ footer{border-top:1px solid var(--line);margin-top:40px}
 .cta-contact .chip button{background:var(--lime);color:#140A2B}
 @media (max-width:760px){.cta-in{padding-block:48px}.cta-act{align-items:stretch;width:100%}.cta-btn{text-align:center;justify-content:center}.cta-contact{justify-content:flex-start}}
 
+/* Journey: background shifts lime -> light violet over time */
+.journey{--jl:color-mix(in srgb,var(--lime) 40%,var(--bg));--jv:color-mix(in srgb,var(--violet) 20%,var(--bg));--jm:color-mix(in srgb,var(--bg) 55%,color-mix(in srgb,var(--jl) 45%,var(--jv)))}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .journey{--jl:color-mix(in srgb,var(--lime) 14%,var(--bg));--jv:color-mix(in srgb,var(--violet) 26%,var(--bg))}}
+:root[data-theme="dark"] .journey{--jl:color-mix(in srgb,var(--lime) 14%,var(--bg));--jv:color-mix(in srgb,var(--violet) 26%,var(--bg))}
+.road .seg.a{background:linear-gradient(90deg,var(--jl),var(--jm))}
+.road .seg.b{background:linear-gradient(90deg,var(--jm),var(--jv))}
+@media (max-width:760px){.road-row.r1,.road-row.r2{border-radius:0 16px 16px 0;padding-top:14px}.road-row.r1{background:linear-gradient(180deg,var(--jl),var(--jm))}.road-row.r2{margin-top:10px;background:linear-gradient(180deg,var(--jm),var(--jv))}.r2 .stop.key .dot{margin-left:-3px}}
+
 /* Squircle corners (browsers that support corner-shape) */
 @supports (corner-shape:squircle){
   *,*::before,*::after{corner-shape:squircle}
@@ -586,3 +594,6 @@ footer{border-top:1px solid var(--line);margin-top:40px}
   });
 })();
 </script>
+
+</body>
+</html>
