@@ -291,6 +291,17 @@ footer{border-top:1px solid var(--line);margin-top:40px}
 .road .seg.b{background:linear-gradient(90deg,var(--jm),var(--jv))}
 @media (max-width:760px){.road-row.r1,.road-row.r2{border-radius:0 16px 16px 0;padding-top:14px}.road-row.r1{background:linear-gradient(180deg,var(--jl),var(--jm))}.road-row.r2{margin-top:10px;background:linear-gradient(180deg,var(--jm),var(--jv))}.r2 .stop.key .dot{margin-left:-3px}}
 
+/* Review card */
+.review-card{display:flex;align-items:center;gap:18px;padding:22px 24px;border-radius:16px;background:color-mix(in srgb,var(--violet) 9%,var(--bg));border:1px solid color-mix(in srgb,var(--violet) 22%,var(--line));color:var(--fg);text-decoration:none;transition:background .15s}
+.review-card:hover{background:color-mix(in srgb,var(--violet) 15%,var(--bg))}
+.rv-q{font-size:56px;line-height:.8;font-weight:900;color:var(--violet);align-self:flex-start;flex:none}
+.rv-body{display:flex;flex-direction:column;gap:4px;min-width:0;flex:1}
+.rv-k{font-size:13px;font-weight:700;color:var(--violet-ink)}
+.rv-body b{font-size:17px;line-height:1.4}
+.rv-d{font-size:14px;color:var(--muted)}
+.rv-go{flex:none;background:var(--violet);color:#fff;font-weight:700;font-size:14px;padding:10px 16px;border-radius:10px;white-space:nowrap}
+@media (max-width:560px){.review-card{flex-wrap:wrap;padding:18px}.rv-q{font-size:44px}.rv-go{width:100%;text-align:center}}
+
 /* Squircle corners (browsers that support corner-shape) */
 @supports (corner-shape:squircle){
   *,*::before,*::after{corner-shape:squircle}
@@ -407,6 +418,19 @@ footer{border-top:1px solid var(--line);margin-top:40px}
       <li><span aria-hidden="true">✌️</span><span><b>끝까지 해보고 싶은 분</b><br>문제 분석부터 현장 검증까지, 사회문제 해결의 전 과정을 직접 경험하고 싶은 분</span></li>
       <li><span aria-hidden="true">🤘</span><span><b>꾸준히 함께할 수 있는 분</b><br>약 8개월(1월 – 9월) 동안 진행되는 교육과 팀활동에 성실히 참여하실 수 있는 분</span></li>
     </ul>
+  </section>
+
+  <section class="blk" id="review">
+    <h2>먼저 경험한 선배들의 이야기</h2>
+    <a class="review-card" href="https://blog.naver.com/happinessfoundation/224479069868" target="_blank" rel="noopener">
+      <span class="rv-q" aria-hidden="true">“</span>
+      <span class="rv-body">
+        <span class="rv-k">Sunny Scholar 후일담</span>
+        <b>사회문제 해결에 Deep Dive한 선배들은 어떤 시간을 보냈을까요?</b>
+        <span class="rv-d">행복나눔재단 블로그에서 선배 Sunny의 생생한 후기를 확인해보세요.</span>
+      </span>
+      <span class="rv-go">후기 읽기 ↗</span>
+    </a>
   </section>
 
   <section class="blk" id="program">
