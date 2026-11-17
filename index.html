@@ -275,7 +275,7 @@ footer{border-top:1px solid var(--line);margin-top:40px}
 .cta h2{font-size:clamp(26px,3.6vw,40px);font-weight:900;letter-spacing:-.03em;line-height:1.2;color:#fff;border:0;padding:0;margin:0}
 .cta h2 em{font-style:normal;color:var(--lime)}
 .cta-d{margin:0;opacity:.85;font-size:15px;font-variant-numeric:tabular-nums}
-.cta-act{display:flex;flex-direction:column;align-items:flex-end;gap:16px;min-width:0}
+.cta-act{display:flex;flex-direction:column;align-items:flex-end;gap:16px;min-width:0;max-width:500px}
 .cta-btn{font-size:18px;padding:16px 34px}
 .cta-contact{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;gap:8px 10px;font-size:14px}
 .cta-contact b{color:var(--lime)}
@@ -302,6 +302,15 @@ footer{border-top:1px solid var(--line);margin-top:40px}
 .rv-go{flex:none;background:var(--violet);color:#fff;font-weight:700;font-size:14px;padding:10px 16px;border-radius:10px;white-space:nowrap}
 @media (max-width:560px){.review-card{flex-wrap:wrap;padding:18px}.rv-q{font-size:44px}.rv-go{width:100%;text-align:center}}
 
+.kakao{display:inline-flex;align-items:center;gap:6px;background:#FEE500;color:#191919;font-weight:700;font-size:14px;padding:7px 14px;border-radius:10px;text-decoration:none;white-space:nowrap}
+.kakao:hover{background:#F4DA00}
+.cta-contact .ct-row{display:inline-flex;align-items:center;gap:0 10px}
+@media (max-width:760px){.cta-contact .ct-row{width:100%}}
+.cta-contact{flex-direction:column;align-items:flex-end}
+.cta-contact .ct-who{display:inline-flex;gap:10px;align-items:center}
+@media (max-width:760px){.cta-contact{align-items:flex-start}}
+.cta-contact .ct-t{font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;user-select:all}
+.cta-contact .ct-t+.ct-t::before{content:"·";margin-right:10px;opacity:.6;user-select:none}
 /* Squircle corners (browsers that support corner-shape) */
 @supports (corner-shape:squircle){
   *,*::before,*::after{corner-shape:squircle}
@@ -494,9 +503,9 @@ footer{border-top:1px solid var(--line);margin-top:40px}
     <div class="cta-act">
       <a class="btn btn-lime cta-btn" href="https://walla.my/a/sunnyscholar2027" target="_blank" rel="noopener">지원하기 →</a>
       <div class="cta-contact">
-        <b>문의</b><span>Sunny 사무국 조신화 매니저</span>
-        <span class="chip"><span>070-7601-0877</span><button type="button" data-copy="070-7601-0877">복사</button></span>
-        <span class="chip"><span>joess@skhappiness.org</span><button type="button" data-copy="joess@skhappiness.org">복사</button></span>
+        <a class="kakao" href="https://open.kakao.com/o/syfbWrWi" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 3C6.48 3 2 6.54 2 10.9c0 2.8 1.86 5.27 4.66 6.67l-.95 3.5c-.08.3.26.55.52.38l4.15-2.74c.53.06 1.07.09 1.62.09 5.52 0 10-3.54 10-7.9S17.52 3 12 3z"/></svg>카카오톡 오픈채팅 문의</a>
+        <span class="ct-row"><span class="ct-t">070-7601-0877</span><span class="ct-t">joess@skhappiness.org</span></span>
+        <span class="ct-who"><b>문의</b><span>Sunny 사무국 조신화 매니저</span></span>
       </div>
     </div>
   </div>
